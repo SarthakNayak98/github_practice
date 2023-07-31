@@ -1,0 +1,2 @@
+git init : initialises a directory an makes it a git repository
+git status : shows the status of any commits to be made and shows the files to be staged or tracked (works like ls in file system)
