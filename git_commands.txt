@@ -17,3 +17,9 @@ git checkout master : takes you to master branch and there if you view files the
 
 git clone : this helps you to clone a repository from GITHUB to your local machine (EC2 instance in this case)
 git remote -v : when on the local machine and inside a cloned repository, we can use this command and check the origin of the repository (github urls)
+
+git fetch : fetches multiple branches updated in github to local machine
+git pull : fetches one parcticular branch from github repo
+git push : help us push our content/ code from local machine to github repo
+
+
