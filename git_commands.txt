@@ -1,2 +1,19 @@
 git init : initialises a directory an makes it a git repository
 git status : shows the status of any commits to be made and shows the files to be staged or tracked (works like ls in file system)
+git add : adds a file to "staged" status from "unstaged". Adds the contents of the file to index
+git rm --cached : can be used to unstage a file from "staged" state
+git commit -m " " : this helps to record the contents of the file to the repository, so that it can be restored later. saves a version of the file
+git restore : restores the commited file even if its deleted
+git log : shows what all commits have been made till now, shows the commit hash, authorname and email and commit message at the bottom
+git log --oneline: shows only shortened commit hash number (first 7 characters ) and shows the commit message
+git log --oneline --pretty: show the output in format just like git log but the commit hash is shortened. Rest every detail is present.
+git config --global user.name "username" : lets you enter the username for your git to use instead of the default one
+git config --global user.email "emailaddress" : lets you enter the email address just like username
+#The --global allows you to use the same user information (such as name and email) for all your Git repositories on that machine.
+git checkout -b branchname : lets you create a new branch (earlier we were on master branch, now doing git checkout -b Dev, we are on Dev branch.
+#you can check which branch you are on by doing --> git status, alternatively you can do --> git log - this shows you that the latest commit is
+#pointing to Dev (the new branch we just created)
+git checkout master : takes you to master branch and there if you view files then it will show the contents that were committed/recorded when branch was pointing to master, alternatively we can say it'll display master's version of the file contents
+
+git clone : this helps you to clone a repository from GITHUB to your local machine (EC2 instance in this case)
+git remote -v : when on the local machine and inside a cloned repository, we can use this command and check the origin of the repository (github urls)
